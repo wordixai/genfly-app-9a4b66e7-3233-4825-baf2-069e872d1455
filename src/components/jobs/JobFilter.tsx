@@ -45,7 +45,7 @@ const JobFilter = ({ onFilter }: JobFilterProps) => {
             <SelectValue placeholder="Location" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="">All Locations</SelectItem>
+            <SelectItem value="all-locations">All Locations</SelectItem>
             <SelectItem value="San Francisco, CA">San Francisco, CA</SelectItem>
             <SelectItem value="New York, NY">New York, NY</SelectItem>
             <SelectItem value="Remote">Remote</SelectItem>
@@ -60,7 +60,7 @@ const JobFilter = ({ onFilter }: JobFilterProps) => {
             <SelectValue placeholder="Job Type" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="">All Types</SelectItem>
+            <SelectItem value="all-types">All Types</SelectItem>
             <SelectItem value="Full-time">Full-time</SelectItem>
             <SelectItem value="Part-time">Part-time</SelectItem>
             <SelectItem value="Contract">Contract</SelectItem>

@@ -22,9 +22,14 @@ const Index = () => {
         job.description.toLowerCase().includes(filters.search.toLowerCase());
 
       const matchesLocation =
-        !filters.location || job.location === filters.location;
+        !filters.location || 
+        filters.location === "all-locations" || 
+        job.location === filters.location;
 
-      const matchesType = !filters.type || job.type === filters.type;
+      const matchesType = 
+        !filters.type || 
+        filters.type === "all-types" || 
+        job.type === filters.type;
 
       return matchesSearch && matchesLocation && matchesType;
     });
